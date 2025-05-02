@@ -8,8 +8,8 @@ const user: {
     isMarried: boolean;
 } = {
     company: "Programming",
-    firstName: 'fariha',
-    lastName: "sarkar",
+    firstName: 'fatima',
+    lastName: "sarah",
     isMarried: true,
 };
 
