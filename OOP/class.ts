@@ -19,7 +19,30 @@
     }
 
     const cat = new Animal("German", "cat", "mew mew")
-    cat.makeSound()
+    // cat.makeSound();
+
+    class Person {
+        // nameP: string;
+        // ageP: number;
+        // contact: string;
+
+        // parameter properties
+        constructor(public nameP: string,
+            public ageP: number,
+            public contact: string) {
+            // this.nameP = nameP;
+            // this.ageP = ageP;
+            // this.contact = contact;
+        }
+        makePerson() {
+            console.log(`the ${this.nameP} ageP ${this.ageP}`);
+        }
+    }
+
+    const girl = new Person("Fariha", 22, "0129");
+    girl.makePerson()
+
+
 
     // 
 }

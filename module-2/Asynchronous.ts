@@ -9,11 +9,26 @@
             }
         })
     }
-
+    // calling create promise function
     const showData = async (): Promise<string> => {
         const data = await createPromise()
-        // console.log(data)
+        console.log(data)
         return data
     }
     showData()
+
+    type ToDo = {
+        id: number;
+        userId: number;
+        title: string;
+        completed: boolean;
+    }
+
+    const getToDo = async (): Promise<ToDo> => {
+        const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+        const data = await res.json()
+        console.log(data)
+        return data
+    }
+    getToDo()
 }

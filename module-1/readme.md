@@ -50,7 +50,7 @@ TypeScript sometimes cannot determine the exact type of a variable, especially w
 let anything: any;
 
 // Assign a string value to a variable typed as 'any'
-anything = "Md Fariha Bakh Mazumder";
+anything = "Fariha ";
 
 // Use type assertion to tell TypeScript it's a string
 const nameLength = (anything as string).length;
